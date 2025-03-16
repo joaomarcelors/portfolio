@@ -225,3 +225,53 @@ main {
 .contato button:hover {
     background-color: #ff6347;
 }
+
+/* Estilos para a página de contato */
+.contato-info {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-item .icon {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Alinha o ícone verticalmente com o texto */
+}
+
+.info-item .info-text {
+    flex: 1;
+}
+
+.info-item h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.info-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-item a:hover {
+    color: #ff6347;
+}
