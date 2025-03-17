@@ -20,13 +20,54 @@
         </ul>
     </nav>
 
-    <!-- Detalhes do Projeto -->
-    <main class="detalhes-projeto">
-        <img src="../images/condominio.png" alt="Imagem do Projeto 1">
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto">
         <p>
             Este é um site pessoal criado com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.
-            O design é responsivo e funciona bem em dispositivos móveis.
+            O design é responsivo e funciona bem em dispositivos móveis. Aqui estão algumas fotos e um vídeo
+            demonstrativo do projeto.
         </p>
-    </main>
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
+            <img src="../images/circuito-irrigacao-automatica.png" alt="Foto 1 do Projeto 1">
+        </div>
+        <div class="midia" data-type="image" data-src="../images/condominio.png">
+            <img src="../images/condominio.png" alt="Foto 2 do Projeto 1">
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
+            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
+            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
+            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
+            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        </div>
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
 </body>
 </html>
