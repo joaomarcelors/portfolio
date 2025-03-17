@@ -74,7 +74,7 @@ main {
 .info-perfil h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #645e5e
 }
 
 .info-perfil p {
@@ -274,4 +274,77 @@ main {
 
 .info-item a:hover {
     color: #ff6347;
+}
+
+.titulo-secao {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px 0;
+    text-align: left; /* Alinhado à esquerda */
+    max-width: 800px; /* Mesma largura da caixa */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0px; /* Mesmo padding da caixa */
+}
+
+
+
+/* Estilos para a seção "Sobre mim" */
+.sobre-mim {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.sobre-mim h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sobre-mim p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos para a seção "Habilidades" */
+.habilidades {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+
+.habilidades h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidade {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.habilidade:hover {
+    background-color: #ff6347;
+    cursor: pointer;
 }
