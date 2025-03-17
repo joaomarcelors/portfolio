@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto 1: Site Pessoal</h1>
-    </header>
 
     <!-- Barra de navegação -->
     <nav>
@@ -19,38 +16,35 @@
             <li><a href="../contact.html">Contatos</a></li>
         </ul>
     </nav>
-
+    <header>
+        <h1>Telemetria para condomínio</h1>
+    </header>
     <h1 class="titulo-secao">Descrição</h1>
     <!-- Descrição do Projeto -->
     <section class="descricao-projeto">
         <p>
-            Este é um site pessoal criado com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.
-            O design é responsivo e funciona bem em dispositivos móveis. Aqui estão algumas fotos e um vídeo
-            demonstrativo do projeto.
+            Este é um sistema de telemetria para condomínios com o objetivo de monitorar e gerenciar diversos 
+            sensores, como medição de nível d'água da cisterna, status e temperatura da bomba d'água, status da rede elétrica,
+            energia, disjuntor, relé térmico e portão da garagem.
         </p>
+        
+        <ul>
+            <li>O sistema foi implementado utilizando um microcontrolador ESP32 programado com o ESP-IDF (IoT Development Framework), foi
+                usado o protoloco MQTT (Message Queuing Telemetry Transport) para comunicação com a nuvem a partir da conexão Wi-Fi ou Ethernet.</li>
+            <li>Foi criado um dashboard online por meio de uma plataforma IoT: TagoIO que permitiu visualizar todas as informações dos
+                sensores em tempo real.</li>
+            <li>A partir de um cartão SD foi possível salvar as informações em momentos que não havia conexões com a internet,
+                sendo enviadas para a nuvem posteriomente.</li>
+            <li>O sistema se mostrou eficaz, com alta velocidade de transmissão de dados e sem perdas de informações.</li>
+        </ul>
     </section>
 
     <h1 class="titulo-secao">Mídias</h1>
 
          <!-- Galeria de Fotos e Vídeos -->
     <section class="galeria">
-        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
-            <img src="../images/circuito-irrigacao-automatica.png" alt="Foto 1 do Projeto 1">
-        </div>
-        <div class="midia" data-type="image" data-src="../images/condominio.png">
-            <img src="../images/condominio.png" alt="Foto 2 do Projeto 1">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        <div class="midia" data-type="image" data-src="../images/telemetria_condominio.png">
+            <img src="../images/telemetria_condominio.png" alt="Dashboard no TagoIO para o monitoramento"> 
         </div>
     </section>
 
