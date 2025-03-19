@@ -23,30 +23,43 @@
     <!-- Descrição do Projeto -->
     <section class="descricao-projeto-num">
         <p>
-            Esse projeto teve como objetivo automatizar o todo o processo de irrigação como, possuindo diversas funcionalidades.O sistema foi implementado utilizando um microcontrolador Arduino MEGA programado no Arduino IDE, a escolha
-            desse Arduino foi devido a quantidade de portas e capacidade de memória.O sistema possui um módulo relógio para obter
+            Esse projeto teve como objetivo automatizar o todo o processo de irrigação, possuindo diversas funcionalidades.O sistema foi implementado utilizando um microcontrolador Arduino MEGA programado no Arduino IDE, a escolha
+            desse Arduino foi devido a quantidade de portas e armazenamento de memória.Possui capacidade de configurar até 4 
+            programas diferentes que podem ser escolhido para ser executado. O sistema conta com um módulo relógio para obter
             data e hora atuais, um display LCD 20x4 para visualização das informações, botões para interagir com o sistema, relés para
             acionamentos da bomba, setores, fertilizante e limpeza.As opções de seleção do sistema são:
         </p>
         
         <ol>
-            <li>O sistema interrompe,se necessário, quaisquer tarefas que esteja acontecendo no momento.</li>
-            <li>Configuração de data e hora do sistema.</li> 
-            <li>Configuração do horário para iniciar a irrigação para cada programa.</li> 
-            <li>Configuração da duração da irrigação para cada um dos 16 setores e também para cada programa.</li> 
-            <li></li>
-            <li>A partir de um cartão SD foi possível salvar as informações em momentos que não havia conexões com a internet,
-                sendo enviadas para a nuvem posteriormente.</li>
-            <li>O sistema se mostrou eficaz, com alta velocidade de transmissão de dados e sem perdas de informações.</li>
-            </ol>
+            <li>Sistema desligado.</li>
+            <li>Ajuste de data e hora do sistema.</li> 
+            <li>Horários para iniciar a irrigação para cada programa.</li> 
+            <li>Tempo da irrigação para cada um dos 16 setores e também para cada programa.</li> 
+            <li>Inicio de injeção de fertilizante no setor, bem como o volume e o tempo 
+                máximo de operação da bomba do fertilizante.
+            </li>
+            <li>Quais dias da semana, o sistema vai realizar a irrigação para cada programa.</li>
+            <li>Tempo para iniciar a limpeza e quanto tempo de limpeza.</li>
+            <li>Inicia a irrigação para um setor especifico.</li>
+            <li>Executa um programa de imediato.</li>
+            <li>Executa um programa dado o horário e o dia configurado.</li>
+        </ol>
+
+        <p>
+            O sistema se mostrou eficaz e confiável, considerando diversas situações adversas que podem vim a 
+            comprometer o funcionamento pleno do sistema.
+        </p>
     </section>
 
     <h1 class="titulo-secao">Mídias</h1>
 
          <!-- Galeria de Fotos e Vídeos -->
     <section class="galeria">
-        <div class="midia" data-type="image" data-src="../images/telemetria_condominio.png">
-            <img src="../images/telemetria_condominio.png" alt="Dashboard no TagoIO para o monitoramento"> 
+        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
+            <img src="../images/circuito-irrigacao-automatica.png" alt="Circuito para automação de irrigação"> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/aWlv88MST0I">
+            <img src="../images/capa-yotube-irrigacao.png" alt="Thumbnail do Vídeo">
         </div>
     </section>
 
