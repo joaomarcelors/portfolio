@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1: Site Pessoal</title>
+    <title>Automação para irrigação</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto 1: Site Pessoal</h1>
-    </header>
 
     <!-- Barra de navegação -->
     <nav>
@@ -19,38 +16,37 @@
             <li><a href="../contact.html">Contatos</a></li>
         </ul>
     </nav>
-
+    <header>
+        <h1>Automação para irrigação</h1>
+    </header>
     <h1 class="titulo-secao">Descrição</h1>
     <!-- Descrição do Projeto -->
-    <section class="descricao-projeto">
+    <section class="descricao-projeto-num">
         <p>
-            Este é um site pessoal criado com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.
-            O design é responsivo e funciona bem em dispositivos móveis. Aqui estão algumas fotos e um vídeo
-            demonstrativo do projeto.
+            Esse projeto teve como objetivo automatizar o todo o processo de irrigação como, possuindo diversas funcionalidades.O sistema foi implementado utilizando um microcontrolador Arduino MEGA programado no Arduino IDE, a escolha
+            desse Arduino foi devido a quantidade de portas e capacidade de memória.O sistema possui um módulo relógio para obter
+            data e hora atuais, um display LCD 20x4 para visualização das informações, botões para interagir com o sistema, relés para
+            acionamentos da bomba, setores, fertilizante e limpeza.As opções de seleção do sistema são:
         </p>
+        
+        <ol>
+            <li>O sistema interrompe,se necessário, quaisquer tarefas que esteja acontecendo no momento.</li>
+            <li>Configuração de data e hora do sistema.</li> 
+            <li>Configuração do horário para iniciar a irrigação para cada programa.</li> 
+            <li>Configuração da duração da irrigação para cada um dos 16 setores e também para cada programa.</li> 
+            <li></li>
+            <li>A partir de um cartão SD foi possível salvar as informações em momentos que não havia conexões com a internet,
+                sendo enviadas para a nuvem posteriormente.</li>
+            <li>O sistema se mostrou eficaz, com alta velocidade de transmissão de dados e sem perdas de informações.</li>
+            </ol>
     </section>
 
     <h1 class="titulo-secao">Mídias</h1>
 
          <!-- Galeria de Fotos e Vídeos -->
     <section class="galeria">
-        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
-            <img src="../images/circuito-irrigacao-automatica.png" alt="Foto 1 do Projeto 1">
-        </div>
-        <div class="midia" data-type="image" data-src="../images/condominio.png">
-            <img src="../images/condominio.png" alt="Foto 2 do Projeto 1">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/5XqtvOYUGDk">
-            <img src="../images/trekking2.jpg" alt="Thumbnail do Vídeo">
+        <div class="midia" data-type="image" data-src="../images/telemetria_condominio.png">
+            <img src="../images/telemetria_condominio.png" alt="Dashboard no TagoIO para o monitoramento"> 
         </div>
     </section>
 

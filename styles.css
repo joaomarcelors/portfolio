@@ -499,3 +499,50 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     font-size: 1.2rem;
     margin-right: 10px; /* Espaçamento entre a bolinha e o texto */
 }
+
+.descricao-projeto ol {
+    list-style-type: none; /* Remove as bolinhas padrão */
+}
+
+/* Estilos para a descrição do projeto */
+.descricao-projeto-num {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.descricao-projeto-num h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descricao-projeto-num p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos para a lista de tópicos */
+.descricao-projeto-num ul {
+    list-style-type: disc; /* Bolinhas padrão */
+    margin-left: 0px; /* Espaçamento à esquerda */
+    padding-left: 5px; /* Espaçamento interno */
+}
+
+.descricao-projeto-num li {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+/* Personalização das bolinhas */
+.descricao-projeto-num ol {
+    /* list-style-type: none; Remove as bolinhas padrão */
+    padding-left: 20px;
+}
+
