@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1: Site Pessoal</title>
+    <title>Horímetro para máquina</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto 3: Aplicativo</h1>
-    </header>
 
     <!-- Barra de navegação -->
     <nav>
@@ -19,14 +16,57 @@
             <li><a href="../contact.html">Contatos</a></li>
         </ul>
     </nav>
-
-    <!-- Detalhes do Projeto -->
-    <main class="detalhes-projeto">
-        <img src="../images/trekking2.jpg" alt="Imagem do Projeto 1">
+    <header>
+        <h1>Horímetro para máquina</h1>
+    </header>
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto">
         <p>
-            Este é um site pessoal criado com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.
-            O design é responsivo e funciona bem em dispositivos móveis.
+            Este é um sistema de telemetria para condomínios com o objetivo de monitorar e gerenciar diversos 
+            sensores, como medição de nível d'água da cisterna, status e temperatura da bomba d'água, status da rede elétrica,
+            energia, disjuntor, relé térmico e portão da garagem.
         </p>
-    </main>
+        
+        <ul>
+            <li>O sistema foi implementado utilizando um microcontrolador ESP32 programado com o ESP-IDF (IoT Development Framework), foi
+                usado o protocolo MQTT (Message Queuing Telemetry Transport) para comunicação com a nuvem a partir da conexão Wi-Fi ou Ethernet.</li>
+            <li>Foi criado um dashboard online por meio de uma plataforma IoT: TagoIO que permitiu visualizar todas as informações dos
+                sensores em tempo real.</li>
+            <li>A partir de um cartão SD foi possível salvar as informações em momentos que não havia conexões com a internet,
+                sendo enviadas para a nuvem posteriormente.</li>
+            <li>O sistema se mostrou eficaz, com alta velocidade de transmissão de dados e sem perdas de informações.</li>
+        </ul>
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
+            <img src="../images/circuito-irrigacao-automatica.png" alt="Circuito para automação de irrigação">
+            <figcaption>Circuito no Simulador Wokwi.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/aWlv88MST0I">
+            <img src="../images/capa-yotube-irrigacao.png" alt="Thumbnail do Vídeo">
+            <figcaption>Demonstração do funcionamento do sistema.</figcaption> 
+        </div>
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
 </body>
 </html>
