@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle inteligente para ar condicionado</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projetos</a></li>
+            <li><a href="../contact.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Controle inteligente para ar condicionado</h1>
+    </header>
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto">
+        <p>
+            Este é um sistema inteligente com o objetivo controlar o ar condicionado das salas do CEFET-MG Campus Leopoldina,
+            sem a necessidade do controle remoto original.Esse projeto foi desenvolvido em equipe na disciplina de
+            Projeto do Produto/Processo durante minha graduação. Fiquei responsável pela programação e auxilio na montagem do protótipo.
+         </p>
+        
+        <ul>
+            <li>O sistema foi implementado utilizando um microcontrolador ESP32 programado no Arduino IDE, foi
+                usado o protocolo HTTP (Hypertext Transfer Protocol) para comunicação entre o dispositivo e o computador a partir da conexão Wi-Fi.</li>
+            <li>O sistema possui um modulo RFID, para que apenas professores ou alunos autorizados que tenham cartão 
+                cadastrado possam usar o dispositivo.O cadastrado de novos usuários era feito em uma planilha no computador e por meio
+                de um script em python eram enviados as tags dos cartões dos usuários para o ESP32. Todos as tags eram salvos na memória
+                interna do ESP32.
+            </li>
+            
+            <li>A partir de um led infra-vermelho era possível captar os comandos de liga/desliga e temperaturas do controle original
+                     de cada ar condicionado.Assim, com esses comandos eram possível controlar o ar condicionado pelo dispositivo</li>
+            
+            <li>Ao aproximar o cartão RFID o sistema liberava ou não o acesso ao usuário.Todas as informações eram mostradas
+                em display LCD 16x2, o dispositivo possui três botões para ligar/desligar, diminuir e aumentar a temperatura do ar.Além
+                de possuir um led verde e um buzzer para interatividade com o usuário.
+            </li>
+            <li>O usuário ao ligar o ar-condicionado um timer de 2h era acionado, passado esse tempo,o sistema 
+                automaticamente enviava um sinal para desligar o ar. Esse tempo estipulado foi com base no tempo de uma aula normal.
+            </li>
+            <li>Durante os testes, o sistema demonstrou-se funcional e está em andamento para a efetiva instalação nas salas.</li>
+        </ul>
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/prototipo_ar_condicionado.jpg">
+            <img src="../images/prototipo_ar_condicionado.jpg" alt="Primeiro protótipo do sistema"> 
+            <figcaption>Protótipo do sistema.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/b-TEc4Xq5ik">
+            <img src="../images/capa_envio_tags.png" alt="Thumbnail do Vídeo">
+            <figcaption>Demonstração de envio das tags para o ESP32.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/Wb-XRqypzG8">
+            <img src="../images/capa_ar_condicionado.png" alt="Thumbnail do Vídeo">
+            <figcaption>Demonstração do funcionamento do sistema.</figcaption> 
+        </div>
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
+</body>
+</html>
