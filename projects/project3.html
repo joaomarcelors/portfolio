@@ -23,19 +23,23 @@
     <!-- Descrição do Projeto -->
     <section class="descricao-projeto">
         <p>
-            Este é um sistema de telemetria para condomínios com o objetivo de monitorar e gerenciar diversos 
-            sensores, como medição de nível d'água da cisterna, status e temperatura da bomba d'água, status da rede elétrica,
-            energia, disjuntor, relé térmico e portão da garagem.
+            Este é um Horímetro de quanto uma máquina ficou nos estados de ligado/desligado, configuração e em manutenção ao pressionar
+            algum dos 3 botões, a representação dos estados era feita por uma indicação luminosa.
+            Fiquei responsável pela parte de toda a programação e montagem simples do circuito.
         </p>
         
         <ul>
-            <li>O sistema foi implementado utilizando um microcontrolador ESP32 programado com o ESP-IDF (IoT Development Framework), foi
-                usado o protocolo MQTT (Message Queuing Telemetry Transport) para comunicação com a nuvem a partir da conexão Wi-Fi ou Ethernet.</li>
-            <li>Foi criado um dashboard online por meio de uma plataforma IoT: TagoIO que permitiu visualizar todas as informações dos
-                sensores em tempo real.</li>
-            <li>A partir de um cartão SD foi possível salvar as informações em momentos que não havia conexões com a internet,
-                sendo enviadas para a nuvem posteriormente.</li>
-            <li>O sistema se mostrou eficaz, com alta velocidade de transmissão de dados e sem perdas de informações.</li>
+            <li>O sistema foi implementado utilizando um microcontrolador ESP32 programado no Arduino IDE, foi
+                usado o protocolo HTTP (Hypertext Transfer Protocol) para comunicação com o servidor local a partir da conexão Wi-Fi.
+                
+            </li>
+                <li>O servidor foi feito em PHP, onde recebia um dos três estados, bem como data e hora do inicio e fim, 
+                    isso era gravado em um bando de dados SQL.</li>
+                <li>A visualizações das informações era feita a partir das consultas no banco de dados.</li>
+            <li>A partir da memória interna do ESP32 foi possível salvar as informações em momentos que não havia conexões com o servidor,
+                sendo enviadas posteriormente.</li>
+            <li>O sistema se mostrou eficaz e sem perdas de informações.</li>
+            <li>Para acessar os códigos <a href="https://github.com/joaomarcelors/projetoHorimetroMaquina" target="_blank" rel="noopener noreferrer">clique aqui</a>.</li>
         </ul>
     </section>
 
@@ -43,13 +47,9 @@
 
          <!-- Galeria de Fotos e Vídeos -->
     <section class="galeria">
-        <div class="midia" data-type="image" data-src="../images/circuito-irrigacao-automatica.png">
-            <img src="../images/circuito-irrigacao-automatica.png" alt="Circuito para automação de irrigação">
-            <figcaption>Circuito no Simulador Wokwi.</figcaption> 
-        </div>
-        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/aWlv88MST0I">
-            <img src="../images/capa-yotube-irrigacao.png" alt="Thumbnail do Vídeo">
-            <figcaption>Demonstração do funcionamento do sistema.</figcaption> 
+        <div class="midia" data-type="image" data-src="../images/projetoHorimetroMaquina3botoes.png">
+            <img src="../images/projetoHorimetroMaquina3botoes.png" alt="Circuito simples do Horímetro">
+            <figcaption>Circuito simples do Horímetro.</figcaption> 
         </div>
     </section>
 
