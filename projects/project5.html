@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciação Científica: Desenvolvimento de um USV autônomo para cooperação com UAV</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projetos</a></li>
+            <li><a href="../contact.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Iniciação Científica: Desenvolvimento de um USV autônomo para cooperação com UAV</h1>
+    </header>
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto">
+        <p>
+            Projeto de pesquisa teve como objetivo projetar e desenvolver um USV(veículo de superfície não tripulado) totalmente
+            autônomo do tipo catamarã para cooperação com UAV(veículo aéreo não tripulado).Esse projeto foi desenvolvido em 
+            dupla com meu colega Vitor E. F. Oliveira e sobre orientação do professor Accacio F. dos Santos Neto.
+         </p>
+        
+        <ul>
+            <li>USV: Catamarã autônomo com dois propulsores aéreos e com uma plataforma de pouso.A maioria das peças foram desenvolvidas 
+                em 3D no software Invertor, posteriormente foi realizado as impressões 3D das peças de
+                material ABS e realizado as montagens. O sistema do barco foi implementado em uma PCB utilizando um microcontrolador ESP32 programado no
+            PlatformIO contendo os seguintes sensores e atuadores: Modulo GPS GY-NEO6MV2, Sensor de orientação HMC5883L, 
+            MPU-6050 e dois ESC's para controle de velocidade dos dois motores.
+        </li>
+        <li>UAV: Para o veículo aéreo foi utilizado o drone DJI Tello.</li>
+
+        <li>Sistema de comunicação: Foi utilizando o framework ROS para conectar ambos os veículos por meio da conexão Wi-Fi, e assim, foi
+            possível decolar,voar e pousar com o drone por meio de um joystick, navegação autônoma do USV e aquisição e armazenamento de todos os
+             dados das missões.
+        </li>
+        <li>O presente trabalha encontra-se em aprimoramento, onde já está sendo desenvolvido um artigo científico abordando a
+            odometria de ambos os veículos durante a missão.
+        </li>
+        <li>Futuramente pretende-se realizar decolagem, pouso e voos autônomos com o drone a partir de um marcador localizado
+            na plataforma de pouso do USV.</li>
+        </ul>
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/aerocat_v2_without_platform.png">
+            <img src="../images/aerocat_v2_without_platform.png" alt="Modelo 3D do USV sem plataforma"> 
+            <figcaption>Modelo 3D do USV sem plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/plataform_design.png">
+            <img src="../images/plataform_design.png" alt="Modelo 3D do USV com plataforma"> 
+            <figcaption>Modelo 3D do USV com plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco4.jpg">
+            <img src="../images/barco4.jpg" alt="USV sem plataforma"> 
+            <figcaption>USV sem plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco3.jpg">
+            <img src="../images/barco3.jpg" alt="USV sem plataforma"> 
+            <figcaption>USV sem plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco1.jpg">
+            <img src="../images/barco1.jpg" alt="USV com plataforma"> 
+            <figcaption>USV com plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco2.jpg">
+            <img src="../images/barco2.jpg" alt="USV com plataforma"> 
+            <figcaption>USV com plataforma.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco_drone1.jpg">
+            <img src="../images/barco_drone1.jpg" alt="USV com o UAV"> 
+            <figcaption>USV com o UAV.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/barco_drone2.jpg">
+            <img src="../images/barco_drone2.jpg" alt="USV com o UAV"> 
+            <figcaption>USV com o UAV.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/djiTello.png">
+            <img src="../images/djiTello.png" alt="USV com o UAV"> 
+            <figcaption>UAV DJI Tello.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/URZBtoMHHnw">
+            <img src="../images/piscina.jpg" alt="Thumbnail do Vídeo">
+            <figcaption>Vídeo: Demonstração da cooperação entre USV autônomo e UAV.</figcaption> 
+        </div>
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
+</body>
+</html>
