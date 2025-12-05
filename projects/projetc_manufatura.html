@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto para um Sistema de Manufatura</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projetos</a></li>
+            <li><a href="../contact.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Projeto para um Sistema de Manufatura</h1>
+    </header>
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto"> 
+    <p> Este projeto foi desenvolvido em equipe com meus amigos Vitor E. F. Oliveira e Elianfrancis S. Souza, 
+        na disciplina de Sistemas Integrados de Manufatura, durante minha graduação. A atividade foi proposta pelo 
+        professor Rodolfo L. Valle e tinha como objetivo programar toda a planta CIM-C, simulando uma automação de um
+        processo industrial completo. O sistema deveria receber uma peça polímero ou uma metálica de aluminio ou de aço, que passaria por diversas etapas, como furação, 
+        inspeção do furo por visão computacional e pesagem. Também foram implementadas rotinas para os botões de START, 
+        STOP e EMERGÊNCIA, além do tratamento de situações adversas, como reprovação da peça durante o processo. Ao final, 
+        foi desenvolvido um supervisório para monitorar o sistema em tempo real. </p> 
+        
+        <p> Inicialmente, foi estudado 
+            todos os sensores e atuadores conectados ao CLP (modelo Twido – Schneider Electric). Em seguida, 
+            realizamos o mapeamento das memórias de entradas e saídas em uma tabela para organização e referência.
+            Para estruturação da lógica de programação, foi utilizado o linguagem Grafcet, que posteriormente foi convertido
+             para a linguagem Ladder e implementado no software TwidoSuite. O supervisório foi desenvolvido no software
+             Eclipse E3, utilizando o protocolo de comunicação MODBUS. Ele apresentava informações como total de peças
+              produzidas, número de erros, peças rejeitadas e mensagens de alerta para o operador, garantindo melhor 
+        acompanhamento do processo. </p>
+
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/planta_cim_C.png">
+            <img src="../images/planta_cim_C.png" alt="Planta CIM-C"> 
+            <figcaption>Planta CIM-C.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/supervisorio.png">
+            <img src="../images/supervisorio.png" alt="Tela do Supervisório"> 
+            <figcaption>Tela do Supervisório.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/xEXV4spCMak">
+            <img src="../images/planta_cim_C_2.jpg" alt="Thumbnail do Vídeo">
+            <figcaption>Funcionamento da planta CIM-C e Supervisório..</figcaption> 
+        </div>
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
+</body>
+</html>
