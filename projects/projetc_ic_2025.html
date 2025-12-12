@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciação Científica: Cooperação entre um UAV e UVG</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projetos</a></li>
+            <li><a href="../contact.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Iniciação Científica: Cooperação entre um UAV e UVG</h1>
+    </header>
+    <h1 class="titulo-secao">Descrição</h1>
+    <!-- Descrição do Projeto -->
+    <section class="descricao-projeto">
+        <p> Este projeto de pesquisa tem como objetivo desenvolver uma estratégia de cooperação entre um UAV 
+            (veículo aéreo não tripulado) e um UGV (veículo terrestre não tripulado). O trabalho está sendo realizado
+             sob orientação do professor Murillo F. dos Santos. 
+        </p> 
+        <p> A cooperação está sendo implementada em ambiente 
+                simulado no Gazebo Sim, utilizando o framework ROS 2 com C++ para comunicação entre os veículos. Ambos os robôs
+                 operam com o firmware PX4, e o gerenciamento de voo e navegação é realizado no QGroundControl. 
+                 A função principal do UAV é rastrear a posição do rover e identificar obstáculos à sua frente utilizando marcadores 
+                 ARUCO. 
+                 Ao detectar um obstáculo, o drone envia as coordenadas para o UGV, permitindo que ele execute desvio 
+                 de trajetória. A navegação é feito em corredores de vinha, sendo planejada por meio de campos potenciais, combinando uma força de atração
+                  em direção ao waypoint e uma força de repulsão baseada na posição e no tamanho dos obstáculos. 
+        </p>
+        <ul> 
+        <li><strong>UGV:</strong> Modelo diferencial customizado, equipado com marcador superior 
+        para rastreamento e câmera frontal para analise das plantações.</li>
+            <li><strong>UAV:</strong> 
+            Utilização do modelo X500 Quadrotor com câmera monocular voltada para baixo, permitindo a
+                detecção dos marcadores no rover e nos obstáculos.</li> 
+                <li>O trabalho encontra-se em andamento, bem como o desenvolvimento de um artigo científico 
+                     abordando a metodologia de cooperação entre os
+                    dois veículos.</li> 
+        </ul>
+        </ul>
+    </section>
+
+    <h1 class="titulo-secao">Mídias</h1>
+
+         <!-- Galeria de Fotos e Vídeos -->
+    <section class="galeria">
+        <div class="midia" data-type="image" data-src="../images/uvg_1.png">
+            <img src="../images/uvg_1.png" alt="Veículo terrestre não tripulado"> 
+            <figcaption>UVG.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/uvg_2.png">
+            <img src="../images/uvg_2.png" alt="Veículo terrestre não tripulado"> 
+            <figcaption>UVG.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/uav.png">
+            <img src="../images/uav.png" alt="veículo aéreo não tripulado"> 
+            <figcaption>UAV.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/ambiente_1.png">
+            <img src="../images/ambiente_1.png" alt="Ambiente do experimento"> 
+            <figcaption>Ambiente do experimento.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/ambiente_2.png">
+            <img src="../images/ambiente_2.png" alt="Ambiente do experimento"> 
+            <figcaption>Ambiente do experimento.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/ambiente_4.png">
+            <img src="../images/ambiente_4.png" alt="Ambiente do experimento"> 
+            <figcaption>Ambiente do experimento.</figcaption> 
+        </div>
+        <div class="midia" data-type="image" data-src="../images/obstaculo.png">
+            <img src="../images/obstaculo.png" alt="Ambiente do experimento"> 
+            <figcaption>Obstáculo.</figcaption> 
+        </div>
+        <div class="midia" data-type="video" data-src="https://www.youtube.com/embed/CrYjrsjJUtI">
+            <img src="../images/ambiente_3.png" alt="Thumbnail do Vídeo">
+            <figcaption>Vídeo: Cooperação entre UVG e UAV.</figcaption> 
+    </section>
+
+    <!-- Modal para exibir mídia em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="fechar">&times;</span>
+        <div class="modal-conteudo">
+            <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            <img id="modal-imagem" src="" alt="">
+        </div>
+        <div class="navegacao">
+            <span class="seta esquerda">&#10094;</span>
+            <span class="seta direita">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+
+</body>
+</html>
